@@ -43,8 +43,6 @@ class RoomSerializer(serializers.ModelSerializer):
 
 
 class ReviewSerializer(serializers.ModelSerializer):
-    user_name = UserProfileSimpleSerializer()
-
     class Meta:
         model = Review
         fields = '__all__'
